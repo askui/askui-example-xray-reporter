@@ -2,7 +2,7 @@ import type { Config } from '@jest/types';
 
 const config: Config.InitialOptions = {
   preset: 'ts-jest',
-  testEnvironment: '@askui/askui-reporters/dist/cjs/xray/jest-xray-environment.js',
+  testEnvironment: '@askui/askui-jest-xray-environment',
   setupFilesAfterEnv: ['./helpers/askui-helper.ts'],
   sandboxInjectedGlobals: [
     'Math',

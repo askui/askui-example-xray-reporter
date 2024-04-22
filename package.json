@@ -1,11 +1,11 @@
 {
   "devDependencies": {
-    "@askui/askui-reporters": "1.4.0",
+    "@askui/askui-reporters": "2.0.0",
     "@askui/jest-allure-circus": "^1.0.22",
     "@types/jest": "^29.5.11",
     "@typescript-eslint/eslint-plugin": "^6.18.0",
     "@typescript-eslint/parser": "^6.18.0",
-    "askui": "^0.13.1",
+    "askui": "0.17.1",
     "eslint": "^8.56.0",
     "eslint-plugin-askui": "^1.2.0",
     "eslint-plugin-import": "^2.29.1",
