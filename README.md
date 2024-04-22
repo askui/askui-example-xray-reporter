@@ -12,13 +12,13 @@ npm install
 
 ## 📝 Configuration
 
-1. You need to configure credentials to be able to run the example. See https://docs.askui.com/docs/api/Configuration/askui-ui-control-client#credentials
+1. You need to configure credentials to be able to run the example (except on Windows). See [AskUI UI Control Client docs](https://docs.askui.com/docs/general/Components/askui-ui-control-client#credentials)
 
 2. Also the example assumes that you start the AskUI UI Controller manually instead of through the `beforeAll` and `afterAll` (teardown) hooks.
 
 Downloads:
 
-* [Windows](https://files.askui.com/releases/preview/v23.10.01/askui+Installer.exe)
+* Please use our AskUI Installer and follow the Getting Started guide: [Windows](https://docs.askui.com/docs/general/Getting%20Started/Installing%20AskUI/getting-started)
 * [Linux](https://files.askui.com/releases/askui-ui-controller/latest/linux/x64/askui-ui-controller.AppImage)
 
 > ℹ️ **macOS** After installation to `Applications` remove the quarantine flag with the following command run from a terminal: `xattr -d com.apple.quarantine /Applications/askui-ui-controller.app`
