@@ -10,9 +10,13 @@ let xRayReporter: AskUIXRayStepReporter;
 
 beforeAll(async () => {
   xRayReporter = new AskUIXRayStepReporter({
-    // Uncomment the next line if you want screenshots also when steps pass
-    // withScreenshots: 'always',
-  });
+        // Uncomment the next line if you want screenshots also when steps pass
+        // withScreenshots: 'always',
+      },
+      'xray-report', // outputDirectory (default: 'xray-report')
+      false, // resetReportDirectory -> deletes the outputDirectory before execution if set to true (default: false)
+      false // appendToReport -> appends the results to the file 'report.json if set to true. Otherwise it creates files report_<timestamp>.json (default: false)
+    );
 
   aui = await UiControlClient.build({
     credentials: {
@@ -30,7 +34,7 @@ beforeEach(async () => {
 });
 
 afterEach(async () => {
-  xRayReporter.finishTestEntry(global.testStatus);
+  xRayReporter.finishTestEntry(global.testName, global.testStatus);
 });
 
 afterAll(async () => {
